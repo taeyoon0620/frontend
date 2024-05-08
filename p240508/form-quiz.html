@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>퀴즈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>다양한 폼 입력 </h1>
+
+  <hr>
+  
+  <form action="index"html" method="get">
+
+  <div>
+    <label for="userName">성명 : </label>
+    <input type="text" id="userName" name="userName">
+  </div>
+
+  <div>
+    <span>성별 : </span>
+    <label for ="male">남성</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">여성</label>
+    <input type="radio" name="gender" id="female" value="female">
+  </div>
+
+  <div>
+    <label for="job">직업 : </label>
+    <select name="job" id="job">
+    <option value="job1">학생</option>
+    <option value="job2">회사원</option>
+    <option value="job3">공무원</option>
+    <option value="job4">기타</option>
+    </select>
+  </div>
+
+  <div>
+    <span>구입희망분야(복수 선택가능)</span>
+    <br>
+    <span>-분야 : </span>
+    <label for="computer">컴퓨터</label>
+    <input type="checkbox" id="computer" name="want" value="computer">
+    <label for="economy">경제</label>
+    <input type="checkbox" id="economy" name="want2" value="economy">
+    <label for="knowledge">상식</label>
+    <input type="checkbox" id="knowledge" name="want3" value="knowledge">
+  </div>
+
+  <div>
+    <label for="compare">비고 :</label> <br>
+    <textarea name = "compare" id="info" cols="30" rows="5"></textarea>
+  </div>
+  
+  <hr>
+
+  <div>
+    <input type="reset" value="취소">
+    <input type="submit" value="신청">
+  </div>
+  
+  </form>
+
+</body>
+</html>
