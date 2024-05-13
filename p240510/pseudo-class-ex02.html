@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>가상 클래스2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 마지막 자식이 ol이라 적용이안된다. */
+  /* ul>li:last-child {
+    background-color: #ff0;
+  } */
+  /* ul의 마지막 li 요소에 배경색을 적용합니다. */
+  ul>li:last-of-type {
+    background-color: #ff0;
+  }
+</style>
+</head>
+<body>  
+  <h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <!-- 첫 번째 ol 요소의 항목들입니다. -->
+      <li>추가 항목1</li>
+      <li>추가 항목2</li>
+      <li>추가 항목3</li>
+    </ol>
+    <!-- ul 요소의 li 항목들입니다. -->
+    <li>첫번째</li>
+    <li>두번째</li>
+    <li>세번째</li>
+
+    <ol>
+      <!-- 두 번째 ol 요소의 항목들입니다. -->
+      <li>아이템 1</li>
+      <li>아이템 2</li>
+      <li>아이템 3</li>
+      <li>아이템 4</li>
+    </ol>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>font</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 
+  [단위]
+  절대값 단위(인쇄) : cm,mm,pt(포인트), pc(파이카)
+  
+  @상대값@ 단위 (웹,스크린) : px(1픽셀을 1로하는 단위),
+                          : em(~몇배, 상위 요소 기준)
+                          : rem(~몇배, 최상위 요소[html]기준, html5 추가)
+                          : % (비율, 상위 요소기준) 이미지나 , 영역설정
+                          : vw 
+
+  
+  */
+  /* 폰트 크기 변경 body {font-size:?px}*/
+  html {
+    font-size: 10px;
+  }
+  body { 
+    font-size: 20px;
+    /* font-size: 2em; */
+  }
+  p {
+    font-size : 1.5rem;
+  }
+</style>
+</head>
+<body>
+  <h1>폰트</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at eveniet minus culpa labore numquam voluptas, quia aspernatur nisi iusto inventore, nobis, necessitatibus similique! Sint reiciendis quas rem provident impedit.</p>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, tempore, aspernatur suscipit quia et, ut mollitia hic enim dolor nihil quidem quod sed rem! Libero, eaque! Aperiam, maiores pariatur. Quae.</div>
+</body>
+</html>
+<!-- css 상속 , 속성개념
+상속이 되지않았다면 body의 설정한게 p,div 에 영향이가면안됨
+body 10 px => p div 10 px
+font size 는 상속이 된다. 
+em은 상위 element (상속)
+rem은 최상위 element(html)
+
+-->

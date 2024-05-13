@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[가상 클래스]</title>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 
+  ================================================
+  [부모의 첫 번째 자식 li에 스타일 적용하는법]
+  ================================================
+  */
+  /*-----------------------------CSS2버전의 first child---------------- */
+  /* 부모가 누구든 첫 번째 li => li.first-of-type */
+  /* li:first-of-type {
+    background-color: #ff0;
+  } */
+  /* ul의 무조권 첫번째 자식이여만 적용 되는데 li는 적용되지않음  */
+  /* 부모가 ul인 엘리먼트의 첫 번째 자식이 li */
+  /* ul>li :first-child {
+    background-color: yellow;
+  } */
+  /* -----------------------CSS 3버전의 first type---------------------- */
+  /* li 기준의 first type = 추가항목1,첫번째 */
+  /* [부모가 누구든 li기준의 첫번째 li] */
+  /* li:first-of-type { 
+    background-color: #ff0;
+  } */
+  ul>li:first-of-type{
+    background-color: #ff0;;
+  }
+  
+</style>
+</head>
+<body>
+  <h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <!-- 이 부분은 순서가 있는 목록(ol)입니다. -->
+      <li>추가 항목 1</li>
+      <li>추가 항목 2</li>
+      <li>추가 항목 3</li>
+    </ol>
+    <!-- 이 부분은 순서가 없는 목록(ul)의 첫 번째 자식 li입니다. -->
+    <li>첫번째</li>
+    <li>두번째</li>
+    <li>세번째</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime consectetur explicabo, necessitatibus accusamus, deserunt debitis minus excepturi, quod cupiditate mollitia harum libero. Voluptates modi placeat rerum explicabo ipsum mollitia.</p>
+
+</body>
+</html>

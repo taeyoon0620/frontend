@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>선택자 사용법 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* underline없애고싶으면 text-decoration없애면됨 */
+/* unvisited link */
+a:link {
+  color: #0f0;
+  text-decoration: none;
+}
+/* visited link => style decoration 적용안됨*/
+/* 사이트를 방문하면 회색으로 색이바꿔진다. */
+a:visited {
+  color: #ddd;
+}
+/* 마우스를 올려 놨을 때 => hover */
+/* visited,unvisted 꼭뒤에나둬야함 hover는 */
+a:hover {
+  color: #f00;
+  text-decoration: underline;
+  }
+/* 클릭했을 때 => active */
+a:active {
+  color: #00f;
+}
+/* 탭된상태 =>focus */
+a:focus {
+  background-color: #ff0;
+}
+
+</style>
+</head>
+<body>
+  <!-- 가상클래스는 어떠한상태일때, 사용자가 어떤작업을 할때 -->
+  <h1>pseudo-class</h1>
+  <ol>
+    <li><a href="https://www.naver.com">naver</a></li>
+    <li><a href="https://www.daum.net">daum</a></li>
+    <li><a href="https://www.atom.io">atom</a></li>
+  </ol>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem consectetur deleniti, sint quam at ducimus accusantium est eveniet veniam ratione incidunt laboriosam officiis fugiat aliquam facilis eaque fugit voluptatibus.</p>
+</body>
+</html>

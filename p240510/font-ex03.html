@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>font</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-variant: small-caps;
+  }
+  #size-px {
+    font-size: 20px;
+  }
+  /* 1em = 16px  */
+  #size-em {
+    font-size: 2em;
+  }
+  /* <!-- 1vw = 1 % (1vw당 1퍼센트) --> */
+  #size-vw {
+    font-size: 5vw;
+  }
+</style>
+</head>
+<body>
+  <div id = "wrap">
+    <h2>font size : px</h2>
+    <div id="size-px">Lorem ipsum dolor sit amet.</div>
+
+    <h2>font size : em</h2>
+    <div id="size-em">Lorem ipsum dolor sit amet.</div>
+
+    <h2>font size : vw(viewport width)</h2>
+    <div id="size-vw">Lorem ipsum dolor sit amet.</div>
+  </div>
+</body>
+</html>
+<!-- 사용자가 웹사이트의크기에따라 보이게하는거 
+vw  : 실제 사용자에게 보이게되는 영역 -->

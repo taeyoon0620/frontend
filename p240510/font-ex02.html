@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>font</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+  body {
+    font-size: 12px;
+    /* font family는 폰트의 종류이다. 
+    여러개를쓸수있다. 
+    폰트가 왼쪽에서오른쪽으로 적용됩니다 (우선순위가 왼쪽부터)
+     */
+    font-family: '돋움',sans-serif;
+    /* 폰트가 2개이상이면 구분하기위해 ''를써야한다. */
+  }
+  h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  h2 { 
+    font-size: 1.2em;
+  }
+  .lead {
+    font-weight: bold;
+    font-style: italic;
+    /* italic = 기울임꼴  */
+    font-style:oblique;
+    /* oblique = 기울임꼴 45도 => 웹브라우저 지원안해줌*/
+    /* 기본값 normal */
+    font-variant: small-caps;
+  }
+  div {
+    /* font-size: 2em;
+    font-family: serif, sans-serif;
+    font-weight: bold;
+    font-style : italic;
+    font-variant: small-caps;
+    font-line: small-caps;
+    line-height:2em; */
+
+  /* 1.font-style
+  2.font-variant
+  3.font-weight
+  4.font-size/line-height
+  5.font-family  => 제일마지막에 와야함*/
+    font: italic small-caps bold 2em/2 serif,sans-serif;
+  }
+</style>
+</head>
+<body>
+  <h1>[h1] font style</h1>
+  <h2>[h2] font style</h2>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore excepturi non veniam odit quasi quas corrupti eveniet voluptates nemo cumque, nesciunt necessitatibus tenetur dolorem, incidunt itaque est quidem iste!</p>
+  <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed est aut odit expedita dolores rerum dolor, dolorem neque ipsum, fugiat dolorum nostrum commodi a. Itaque perferendis recusandae repudiandae quis soluta?</div>
+</body>
+</html>
