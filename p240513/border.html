@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>테두리</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .wrap {
+    /* 선 종류  */
+    /* solid | dashed | dotted | double */
+    /* 실선 |  파선  |  점선  | 이중실선 */
+    border-style:solid;
+
+    /* 스타일도 설정가능 따로 따로
+    border-style:solid dashed dotted double; */
+    /* -------------선 두께 ------ */
+    border-width: 5px;
+
+    /* top | right | bottom | left */
+    border-width: 1px 5px 10px 20px;
+
+    /* top | right left | bottom | */
+    border-width: 5px 10px 20px;
+
+    /* top bottom | right left */
+    border-width: 5px 20px;
+
+    /* 전체값 top bottom right left 한번에 설정 */
+    border-width: 5px;
+
+    /*------------ 선 색상 ------------ */
+    border-color : #f00;
+    /* 위 오 밑 왼  */
+    border-color: #f00 #0f0 #00f #ff0;
+
+    /* ---------shorthand 축약형태 (순서상관없음) ------- */
+    border: 5px solid blue; 
+
+    /* shorthand 에서 지정 불가능 , 따로 지정해야함 border-radius 둥근정도 */
+    border-radius: 100px;
+    /* padding은 콘텐츠와 테두리 사이의 여백을 나타내는 영역입니다 */
+    padding: 5px;
+
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque corrupti 
+    eaque error tenetur, eius quasi, aliquam deserunt omnis unde esse
+    reiciendis dolorum ducimus in, quos labore fugit eum eligendi?</div>
+</body>
+</html>

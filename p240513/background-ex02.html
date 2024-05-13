@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>background</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .box {
+    border: 3px double #00f;
+    background-color: #ff0;
+    background-image: url(img/꽁꽁얼어붙은한강위로고양이가.jpg);
+    width:1800px;
+    height:1000px;
+
+
+    /* 이미지가 반복해서 보여지고있다. 이미지의 기본은 반복값이다. */
+    background-repeat:no-repeat;
+    /* repeat-x | repeat-y | no-repeat */
+    /* [이미지 위치 지정] ================================
+    * 가로 x 세로 : 
+    -left/right/center x top/bottom/center
+    background-color: right bottom; */
+
+    /* 수평(왼/오) x 수직 (위/아래) 
+    - left top       0 0
+    - center center  50% 50%
+    - right bottom   100% 100% */
+
+    /* 수평 (왼/오) x 수직(위/아래)
+    미세하게 움직일떄 px 을씀
+    - left top        0   0 */
+
+    background-position: -250px -200px;
+    /* scroll 기본값 | fixed */
+    background-attachment: fixed;
+    
+    background: #0ff url(img/꽁꽁얼어붙은한강위로고양이가.jpg) no-repeat center center;
+  }
+</style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. In saepe consequatur officia cumque, nemo maxime perferendis iste? Atque, velit qui delectus minima perferendis dignissimos, repellendus amet neque ipsum corporis id.</div>
+
+</body>
+</html>

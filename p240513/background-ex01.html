@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>background</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .box { 
+    border: 5px double #00f;
+    padding: 20px;
+    background-color: #ff0;
+    /* 
+    [투명도] =================
+    - 0~1 (0: 투명, 1: 불투명)
+    - 상속됨 =>자식에게도 영향을 준다.
+    - 텍스트 읽기 힘듦
+    ==========================*/
+    /* opacity: 0.1; */
+  }
+  /* text에만 투명도가 설정이됨  */
+  .box > p {
+    opacity: 0.1;
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta laboriosam deserunt modi incidunt obcaecati iste dolorem pariatur quis debitis possimus magni eveniet, ullam earum consequuntur accusamus voluptatem velit. Iusto, vero!
+    </p>
+  </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>background</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .box {
+    width: 400px;
+    height: 100px;
+    border: 3px solid #00f;
+    padding: 20px;
+    margin: 30px;
+    background: url(img/꽁꽁얼어붙은한강위로고양이가.jpg) no-repeat center center;
+  }
+  .box2 {
+    /* 
+    - 가로, 세로 꽉 차게 (비율 깨짐)
+    background-size: 100% 100%
+
+    -가로 꽉차게, 세로 비율 유지
+    background-size: 100% auto
+    
+    -세로 꽉차게, 가로 비율 유지
+    background-size: auto 100%
+    
+    -이미지가 찌그러지지 않은 한도 내에서 가장 크게 표현을 해준다.
+    background-size: cover;
+    
+    -이미지가 짤리는 부분 없이, 모두 표현
+    -여백이 생길 수 있음
+    background-size: contain;
+     */
+    
+     /* 직접 사이즈 조절 가능 */
+    background-size: 150px 100px;
+  }
+</style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos nulla quos perferendis reiciendis consequatur distinctio culpa neque voluptatibus architecto, quidem quod, omnis magni iure pariatur vero animi! Omnis, atque?</div>
+  <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, esse! Voluptatibus atque veritatis dolore voluptas rem quam eveniet odio temporibus. Unde molestiae impedit, quidem necessitatibus quo sed expedita cumque quibusdam.</div>
+</body>
+</html>
+<!-- 이미지를 넣을땐 넓이하고 높이를 설정해야 이미지가보여짐 -->
