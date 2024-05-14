@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>position</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 
+  [position]==========================================
+  static | relative | absolute | fixed | sticky(new!)
+  1) static
+  -default value 기본값 원래 자기자리 
+  -top , left 등 인식안됨: 위치이동이안된다.
+  2) relative 
+  - 원래자기 자리 기준을 삶고 이동한다 
+  - 기본 영역 그대로 인식
+  - 원래 자기 위치에서 이동
+  - 즉, static 기준으로 이동
+  3) absolute
+  - 기존 영역 인식 안 함
+  - 원래 자기 자리가 제거된다.
+  - 상위 엘리먼트 기준으로 이동
+  - static인 상위 엘리먼트는 제외가된다 (relative fixed absolute를 부모로삼는다)
+  - 상위 element가 body인 경우, 웹브라우저 기준으로 이동
+  4) fixed
+  - absolute와 비슷합니다.
+  - 원래 자기 자리가 제거된다.
+  - 무조권 웹 브라우저 기준으로 이동합니다.
+  - 화면 스크롤되어도 그 위치 그대로 있는다.
+  
+  ======================================================
+  */
+  .box {
+    position:absolute;
+    /* top: 100px;
+    left: 100px; */
+    width:400px;
+    padding:20px;
+    background-color: rgba(255, 255, 0, 0.7);
+    font: bold 16px sans-serif
+  }
+</style>
+</head>
+<body>
+  <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore deleniti sed veniam accusantium impedit laudantium dolore exercitationem enim beatae quod aut pariatur cum vitae eaque ipsam laboriosam molestiae, perspiciatis facere?</div>
+  <hr>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste neque impedit quisquam? Cum quibusdam voluptate veritatis velit saepe vel, ex vitae, officiis sit voluptatibus, recusandae porro fugiat autem temporibus?</p>
+</body>
+</html>
+<!-- float와 다르게 position은 element끼리 겹쳐질수있다 -->

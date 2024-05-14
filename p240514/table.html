@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>tabel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .tbl {
+    /* table 전체에 border 설정을하지않는다. */
+    /* border: 1px solid #000f; */
+
+    /*[cell] 사이 여백  
+    border-collapse: separate;(기본값)
+    border-collapse: collapse;(붙일떄씀 여백을)
+    */
+    /* border-collapse:collapse; */
+    width: 800px;
+    table-layout: fixed;
+  }
+  .tbl caption {
+    /* 캡션 숨기기
+    위치가 변경된다.모든속성들의값이*/
+    /* display:none; 이렇게하면 없어지지만, */
+
+    /* 내어쓰기를 통해서 text 숨기기*/
+    text-indent: -200em; 
+    /* (em은곱하기) */
+
+    /* 속성값을 전부 0으로 바꾸기
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0; */
+  }
+  .tbl th, .tbl td {
+    border: 1px solid #000; 
+    text-align: center;
+  }
+  tr:nth-child(odd) td:first-child {
+  background-color : yellowgreen;
+  }
+
+  
+  .tbl .ex {
+    /* empty cells은 그렇게 많이사용하지않는다.
+    empty cells은 border-collapse를 쓰지않아야한다.   */
+    /* empty-cells: hide; */
+  }
+
+</style>
+
+</head>
+<body>
+  <h1>테이블</h1>
+  <table class="tbl">
+    <caption>table caption</caption>
+    <thead>
+      <tr>
+        <th scope="col">table header cell-1</th>
+        <th scope="col">table header cell-2</th>
+        <th scope="col">table header cell-3</th>
+        <th scope="col">table header cell-4</th>
+      </tr>
+      <thead>
+        <tr>
+          <td>table data cell-1 </td>
+          <td>table data cell-2</td>
+          <td>table data cell-3</td>
+          <td>table data cell-4</td>
+        </tr>
+        <!-- tr>td{table data cell-$@5}*4 -->
+        <tt>
+          <td>table data cell -5</td>
+          <td>table data cell -6</td>
+          <td>table data cell -7</td>
+          <td>table data cell -8</td>
+        </tt>
+        <tr>
+          <td>table data cell-9</td>
+          <td>table data cell-10</td>
+          <td class="ex"></td>
+          <td class="ex"></td>
+        </tr>
+      <tr>
+        <th scope="col">table header cell-1</th>
+        <th scope="col">table header cell-2</th>
+        <th scope="col">table header cell-3</th>
+        <th scope="col">table header cell-4</th>
+      </tr>
+      <thead>
+        <tr>
+          <td>table data cell-1</td>
+          <td>table data cell-2</td>
+          <td>table data cell-3</td>
+          <td>table data cell-4</td>
+        </tr>
+        <!-- tr>td{table data cell-$@5}*4 -->
+        <tt>
+          <td>table data cell -5</td>
+          <td>table data cell -6</td>
+          <td>table data cell -7</td>
+          <td>table data cell -8</td>
+        </tt>
+        <tr>
+          <td>table data cell-9</td>
+          <td>table data cell-10</td>
+          <td class="ex"></td>
+          <td class="ex"></td>
+        </tr>
+      </thead>
+    </thead>
+  </table>
+
+</body>
+</html>
+<!-- 홀수행만 배경색노란색으로 바꾸기 -->

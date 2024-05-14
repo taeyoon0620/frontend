@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 300px
+}
+/* 불릿제거,텍스트컬러 검정색,언더라인 제거하기
+display inline하지말고 float으로 설정하기 .  */

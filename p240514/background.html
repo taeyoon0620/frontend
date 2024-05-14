@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>background</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .one {
+    /* 단순히 background-image만 넣으면 해당 element크기 안에만 사진이들어가게됨 */
+    width:1800px;
+    height:1000px;
+    background-size: 800px;
+    background-image: url("img/꽁꽁얼어붙은한강위로고양이가.jpg");
+    background-repeat:no-repeat;
+    background-color: #ff0;
+    background-position: center center;
+  }
+  .two { 
+    /* tag를통해서 image를넣어주는법 => img태그에바로 이미지 설정하기*/
+    /* image tag를통해 넣은 사진은 background size로 조정할수없다 */
+    background-color: #0ff;
+
+    /* <img> background-size로 이미지 크기 조정되지 않음 */
+    background-size: 400px;
+    /* element 구조로들어왔기때문이다. */
+
+    width: 600px;
+
+    /* [object-fit] =======================
+    : object-fill    : 영역에 가득차게
+    : object-cover   : 이미지가 잘리는 부분없이 모두 표현,여백이 생길 수 있음
+    : cover          : 이미지가 찌그러지지 않는 한도 내에서 가장크게 
+    : cover          : 이미지가 잘리는 부분이 생길 수 있음
+    : none           : 원래 이미지 크기 유지하면서, 가운데 보여지도록 자동 설정
+    : scale-down     : none 또는 contain 중 더 적절한 방향으로 이미지 크기 조정                 
+    */
+
+    object-fit: scale-down;
+    /* background direction 사용불가 */
+  }
+</style>
+</head>
+<body>
+  <div class="one">여기에 이미지 표시</div>
+  <div>
+    <img src="img/꽁꽁얼어붙은한강위로고양이가.jpg" 
+    width="1800px" height="1000px" 
+    alt="실험군 이미지" class="two">
+  </div>
+  <div>
+    <img src="img/꽁꽁얼어붙은한강위로고양이가.jpg" alt="대조군 이미지">
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>float</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  img {
+    /* 이미지를 넣을때 기본적으로 설정하는태그 */
+    vertical-align: top;
+  }
+  #wrap .thumb {
+    float: left;
+    border: 3px solid #000;
+  }
+  #wrap .img_list{
+    background-color: #f00;
+    /* overflow:hidden; */
+  #wrap .append {
+      clear: left;
+    }
+  }
+  /* 1. (가장깔끔) 부모의 가상요소를 이용하여 float해제 */
+  /* 부모의 가상요소 after에 clear left/right/both 하기  */
+  /* #wrap .img_list::after {
+    content:"흐름끊기";
+    clear:left;
+    display:block;
+  } */
+  /* 2. overflow : hidden을 적용해서 float해제 (실제로 잘씀 naver)  */
+  /* 3. float 이 설정된 딸려오는 element에 append를 이용하기 */
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>float example</h1>
+    <div class="img_list">
+      <div class="thumb">
+        <img src="https://placehold.co/200?text=A" alt="이미지">
+      </div>
+    </div>
+    <p class="append">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus veritatis deserunt, architecto laborum, earum hic quidem nam dicta velit harum autem obcaecati distinctio ipsa quos facilis neque numquam magnam praesentium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ullam optio ipsa sit maiores ducimus aut sequi, tenetur debitis, laudantium quisquam consectetur, error natus. Accusantium rem eaque sequi accusamus eos?</p>
+  </div>
+</body>
+</html>
+<!-- /* 부모쪽에서 자식element를 넘어가기전에 흐름을 끊어줘야한다 */ -->
