@@ -1,7 +1,33 @@
 @charset "UTF-8";
 
-#wrap {
-  width: 300px
+/* ---reset을해주기--- */
+body,div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0;
+  padding: 0;
+}
+ul,ol,li {
+  list-style: none;
+}
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+#header ul::after {
+  content: "";
+  display:block;
+  /* inline을 하게되면 밑에있는텍스트가 딸려오니까 block 으로 꼭설정하기! */
+  clear: left;
+}
+/* 스타일 설정 */
+#header ul li {
+  float: left;
+}
+#header ul li a {
+  border: 2px solid #000;
+  padding: 0 30px;
+  margin: 10px 5px;
+  line-height: 34px;
+  display: block;
 }
 /* 불릿제거,텍스트컬러 검정색,언더라인 제거하기
 display inline하지말고 float으로 설정하기 .  */

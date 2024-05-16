@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>position</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* 
+  [position]==========================================
+  static | relative | absolute | fixed | sticky(new!)
+  1) static
+  -default value 기본값 원래 자기자리 
+  -top , left 등 인식이안됩니다: 위치이동이안됩니다.
+  2) relative 
+  - 원래자기 자리 기준을 삶고 이동한합니다.
+  - 기본 영역 그대로 인식
+  - 원래 자기 위치에서 이동
+  - 즉, static 기준으로 이동
+  - layout이 틀어지지 않습니다.
+  3) absolute
+  - 기존 영역 인식 안합니다.
+  - 원래 자기 자리가 제거된다.
+  - 상위 엘리먼트 기준으로 이동
+  - 상위 element가 body인 경우, 웹브라우저 기준으로 이동
+  - static인 상위 엘리먼트는 제외가된다 (relative fixed absolute를 부모로삼습니다)
+  4) fixed
+  - absolute와 비슷합니다.
+  - 원래 자기 자리가 제거된다.
+  - 무조권 웹 브라우저 기준으로 이동합니다.
+  - 화면 스크롤되어도 그 위치 그대로 있는다.
+  
+  ======================================================
+  */
+  .box {
+    position:fixed;
+    top: 100px;
+    left: 100px;
+    width:400px;
+    padding:20px;
+    background-color: rgba(255, 255, 0, 0.7);
+    font: bold 16px sans-serif;
+  }
+</style>
+</head>
+<body>
+  <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore deleniti sed veniam accusantium impedit laudantium dolore exercitationem enim beatae quod aut pariatur cum vitae eaque ipsam laboriosam molestiae, perspiciatis facere?</div>
+  <hr>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste neque impedit quisquam? Cum quibusdam voluptate veritatis velit saepe vel, ex vitae, officiis sit voluptatibus, recusandae porro fugiat autem temporibus?</p>
+  <div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi ullam esse, illo expedita corporis ea amet ad alias porro ipsa aspernatur molestias libero recusandae laborum? Facere aperiam non velit nam.</div>
+    <div>At consequuntur esse nam deleniti excepturi animi inventore assumenda, nobis cumque voluptatem eius similique doloremque dolor iste eos magnam optio nemo sapiente libero unde pariatur beatae voluptatum sit quis? Molestias.</div>
+    <div>Repudiandae praesentium provident nesciunt quos nihil amet iusto architecto est beatae nulla facere voluptas quas voluptatem, ea aut! Excepturi neque animi provident rerum similique expedita nihil perferendis rem. Reprehenderit, quae?</div>
+    <div>Officia eveniet ab ea harum sunt dolores? Quis consectetur incidunt eaque tempora cupiditate veniam nulla nobis dolorem rerum? Assumenda, placeat repudiandae maxime ullam consequuntur commodi. Est porro consequatur at laborum.</div>
+    <div>Repudiandae vel nesciunt incidunt totam odio ipsa suscipit laudantium, a reprehenderit, voluptatem vitae similique quam perferendis itaque ipsum, soluta eveniet eum enim beatae? Nemo cum, mollitia sequi earum enim eius!</div>
+    <div>Ea praesentium animi quas alias voluptates ullam soluta libero iusto, id sunt voluptas eaque dicta vero eligendi corrupti neque nobis facilis, doloribus voluptatum modi ab mollitia voluptate nesciunt. Fuga, eos?</div>
+    <div>Nemo hic quibusdam quaerat excepturi voluptatum, laboriosam consectetur? Vero adipisci ab error amet, alias deserunt nobis harum inventore non doloribus porro consectetur iste impedit maxime corporis distinctio sint, iusto ullam!</div>
+    <div>Esse voluptates amet ea earum odio harum repudiandae, cum et perferendis in? Suscipit vero asperiores similique esse repellendus laudantium aspernatur tempora nihil eveniet error, quia, natus enim, provident qui ea.</div>
+    <div>Quisquam eius atque, laborum natus ipsum ipsam delectus tenetur repellendus culpa! Odit voluptatem neque sunt dolorem mollitia eum totam, eius corporis minus sapiente alias, minima, recusandae molestiae dolores illum porro!</div>
+    <div>Accusamus dolorem voluptatem qui eos optio quibusdam, repudiandae reiciendis fugiat recusandae expedita possimus odio inventore saepe at dolore laudantium mollitia est nam et error magnam dignissimos ut. Sint, placeat voluptatum.</div>
+    <div>Sint similique laborum magni ab at possimus porro nesciunt vel iure optio, molestias ipsum officiis praesentium fuga. Numquam, commodi quas debitis, minima, aliquid tenetur maxime odit impedit explicabo amet accusantium.</div>
+    <div>Molestiae ipsam quo et pariatur nihil. Perspiciatis porro autem sequi vero culpa illo magnam quae qui non eum. Illum praesentium voluptates quia enim maxime sequi cupiditate reiciendis tempora, quidem minima!</div>
+    <div>Cum, illum adipisci eum enim nostrum iure vitae laboriosam et ea repellendus ad debitis culpa hic quam sit ullam accusantium cupiditate praesentium accusamus maxime saepe delectus. Omnis magni sint voluptatibus.</div>
+    <div>Veniam, voluptatibus eaque quia est odit beatae dolores enim quam? Aut ut sed accusantium maxime, natus aperiam ex quas magnam, beatae iste molestiae doloribus nam ipsum nulla mollitia! Dolore, atque!</div>
+    <div>Deserunt, commodi sunt nostrum dolorem nulla atque voluptas! Dicta modi provident voluptates vitae nam, numquam cumque quasi perferendis autem distinctio soluta assumenda accusamus magnam ipsa ullam. Eum, ducimus perferendis. Cupiditate.</div>
+    <div>Saepe fugit, quaerat earum eveniet, voluptatibus magnam provident esse et non quia, dolorem voluptas cum eos suscipit obcaecati. Velit doloribus possimus neque modi unde quam ea optio rem beatae amet?</div>
+    <div>Necessitatibus magni ad qui animi, dicta, quaerat odio ullam ipsam ex eos laborum corrupti accusamus laudantium debitis rem architecto porro aperiam vitae alias esse labore quisquam obcaecati? Quas, numquam sed.</div>
+    <div>Labore optio exercitationem ex dignissimos omnis animi rerum ab illum eos odio voluptas, possimus ratione magni? Illo, obcaecati ab dolorum saepe doloribus, numquam voluptas dolore quos aliquid voluptates, rem quis?</div>
+    <div>Suscipit, alias tenetur repellat, dignissimos perspiciatis quae magni rerum sequi accusamus cumque quia cum commodi nulla? Voluptas, delectus voluptatum accusamus distinctio culpa, iste debitis est, cupiditate quis rerum nesciunt quaerat!</div>
+    <div>Eligendi quaerat temporibus minus quidem incidunt suscipit nesciunt, a inventore sapiente corrupti veritatis similique perspiciatis totam tempora neque iusto? Illum obcaecati porro voluptatem, perferendis possimus nam blanditiis ex quod maiores?</div>
+  </div>
+</body>
+</html>
+<!-- float와 다르게 position은 element끼리 겹쳐질수있다 -->
