@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[Javascript] 자료형</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>템플릿 리터럴 : 백틱 사용</h1>
+  <script>
+    /*
+    [문자열]================================================
+    * 템플릿 리터럴 : 백틱 사용
+    : 이중 따움표나 작은 작은표 대신 백틱을 사용 => ```````
+    : 작은 따음표와 혼동할 수 있으나, 백틱은 일반적으로 키보드 tab키
+    위에 있음
+    : 플레이스 홀더를 이용한 ${expression}으로 표현식사용
+    ==========================================================
+    */
+    var age = 35;
+    var name = '홍길동'
+
+    var message = '저는' + name + '이고, 나이는 ' + age + '세 입니다';
+    var messageTwo = `저는 ${name}이고, 나이는 ${age}세입니다`;
+    console.log('message : ', message); //console이라는 참조변수
+    console.log('messageTwo : ', messageTwo)
+
+
+  </script>
+
+</body>
+</html>

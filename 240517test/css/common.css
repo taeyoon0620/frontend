@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* ============ 초기화 코드 ============ */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol,
+li, dl, dt, dd, table, th, td, form,
+fieldset, legend, input, textarea, button,
+select {
+  margin: 0;
+  padding: 0;
+}
+/* 폰트 지정 */
+html {
+  font-size: 14px;
+}
+body, table, input, select, textarea, button {
+  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-size: 1.4rem; 
+  line-height: 1.7rem;
+}
+/* 블릿 제거 */
+ul,ol,li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: #666
+}
+/* 수평선 hide */
+hr {
+  display: none;
+}
+.blind {
+  position: absolute;
+  left: 0;
+  top: -99999em;
+}
+/* ============ 바로가기 ============ */
+#skip-menu a {
+  position: fixed;
+  height:40px;
+  color: white;
+  background-color: black;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  display: block;
+  line-height: 2.5em;
+  text-align: center;
+  z-index: 999;
+}
+
+/* ============ wrap ============ */
+#wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* ============ header ============ */
+#header {
+  position: relative;
+  /* 배너 이미지 영역 확보 */
+  padding-bottom: 120px;
+  background-color: #f6f5ef;
+  /* background: url(../img/b_about.png) no-repeat right bottom; */
+  background: no-repeat right bottom;
+}
+
+#header .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#header .gnb::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+#header::after {
+  content:"";
+  display: block;
+  clear: right;
+}
+.gnb {
+  float:right;
+}
+#header .gnb li {
+  float: left;
+}
+#header .gnb li a {
+  height: 50px;
+  display: block; 
+  background: no-repeat 0 0;
+  text-indent: -9999em;
+}
+
+/* =============컨테이너============== */
+#container {
+  line-height: 2.0em;
+}
+#container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container #content {
+  float: left;
+}
+.coffee1 {
+  font-weight: bold;
+  line-height: 5.0em;
+}
+.coffee2 {
+  color:aquamarine;
+  line-height: 2.0em;
+}
+.coffee3 {
+  line-height: 2.0em;
+}
+.coffee4 {
+  line-height: 2.0em;
+}
+
+/* footer */
+#footer {
+  border-top: 1px solid #fff;
+  padding: 25px;
+  background-color: #2c2a29;
+  color: #fff;
+  font-size: -12px;
+  line-height: 2em;
+  width: 100%;
+  text-align: center;
+
+}
+#footer a {
+  color: #555;
+  text-decoration: none;
+  color: #fff;
+}
+#footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#footer .btm_menu {
+  
+  float: right;
+}
+#footer li {
+  display: inline-block;
+  margin-right: 9px;
+}

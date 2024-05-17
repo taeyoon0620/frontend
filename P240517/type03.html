@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[Javascript] 자료형</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>문자열</h1>
+  <script>
+    const today = 'Good~';
+    
+    // 문자열 길이
+    console.log('문자열 길이 :', today.length);
+
+    // 특정 문자 변경 
+    // -일치하는 첫 번째만 변경
+    console.log(today.replace('o', 'ap-'));
+    // 문자열.replace('특정 문자', '특정 문자');
+    // -일치하는 모두 변경
+    console.log(today.replaceAll('o', 'ap-'));
+
+    // 특정 위치의 문자 추출
+    // 1. 문자열.substring(시작 인덱스, 끝 인덱스)
+    // : 끝 인덱스 제외 (마지막인덱스는 제외)
+    // const today = 'Good ~';         G  O  O  D  ~
+    // 인덱스는 값이 0부터 시작한다 (0, 1, 2, 3, 4 ...)
+    console.log(today.substring(1, 4));
+    
+    // 2. 문자열.slice(시작 인덱스, 끝 인덱스)  3  2  1  0 
+    // 음의 인덱스 사용가능합니다. -(마이너스) -1,-2,-3...... 0대신에 
+    console.log(today.slice(1, -1));
+    // 문자열을 끝까지 출력하는방법
+    console.log(today.slice(1));
+    console.log(today.slice(-4));
+
+    // 특정 문자 기준으로 분리 (쪼개기)
+    // : 배열로 리턴
+    // : 기준으로 사용된 요소에 없음
+    console.log(today.split('d'));
+
+    //  특정 문자 추가 
+    //  문법: 문자열.padStart(문자열 전체 길이, '추가할 문자');
+    console.log(today.padStart(10, '*'));
+
+    // 문법: 문자열.padEnd(문자열 전체 길이, '추가할 문자');
+    console.log(today.padEnd(10, '*')); // 실행결과 : Good~*****
+
+    // 특정 문자 찾기 : true/false 리턴
+    // const today = 'Good';
+    // 대소문자 구분가능
+    console.log(today.includes('d')); //실행결과 : true
+    console.log(today.includes('Go'));//실행결과: true
+    console.log(today.includes('go'));//실행결과 : false
+
+    // 특정 문자의 위치(index) 리턴 =>    변수.indexOf('특정 문자')
+    // - 있음 : 탐색된 첫 번째 문자의 인덱스 리턴
+    // - 없음 : -1 리턴
+    console.log(today.indexOf('o'));  // 실행결과 : 1
+    console.log(today.indexOf('Go')); // 실행결과 : 0
+    console.log(today.indexOf('h')); // 실행결과 : -1
+
+    // 반복 =>REPEAT
+    console.log(today.repeat(3)); //실행결과: Good~Good~Good~
+    console.log('안녕~'.repeat(3)); //실행결과 안녕~안녕안녕~
+
+    // 대소문자 변경 => TOUPPERCASE
+    console.log(today.toUpperCase()); //실행결과 : GOOD~
+    console.log(today.toLowerCase()); //실행결과 : good~
+
+    // 공백 제거  => TRIM
+    const say = '  HI~  '
+    console.log(say) //실행결과 :  HI~
+    console.log('|' + say + '|') //실행결과 : |  HI~  |
+    console.log('|' + say.trimStart() + '|') //실행결과 : |HI~  |  // 왼쪽 공백제거
+    console.log('|' + say.trimEnd() + '|') //실행결과 : |  HI~|  // 오른쪽 공백제거
+    console.log('|' + say.trim() + '|') //실행결과 : |HI~|  // 양쪽 공백제거
+    
+    
+
+  </script>
+
+</body>
+</html>

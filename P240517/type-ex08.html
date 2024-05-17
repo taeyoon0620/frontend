@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[Javascript] 자료형</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>객체 함수</h1>
+  <script>
+    const number = {
+      one: 1,
+      two: 2,
+      three: 3,
+    };
+
+    console.log(number);
+
+    console.log('key를 배열로 추출 : ', Object.keys(number)); // 결과값: [one, two , three] 
+    console.log('value를 배열로 추출 : ', Object.values(number)); // 결과값: [1,2,3] 
+    console.log('key,value를 하나의 쌍으로 추출 : ', Object.entries(number)); // 결과값: [Array(2), Array(2), Array(2)]
+
+
+  </script>
+</body>
+</html>

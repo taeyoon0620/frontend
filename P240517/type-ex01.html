@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[Javascript] 자료형</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>자료형</h1>
+  <script>
+    /*
+    [기본 타입] Primitive Type
+    -number : 숫자(정수,실수)
+    -bigint : 정수 -(2의 53승-1) ~ (2의 53승-1)
+    -string : 문자열 '',""
+    -boolean : 논리값 true/false
+    -undefined : 초기화되지않은상태, 변수 초기화에 사용
+    -null : 객체 변수 초기화 사용
+    -NaN : Not a Number    
+
+    [참조 타입] Reference Type
+    -array : []
+    -function : function()
+    -object : {}
+    -.....
+
+    */
+    // [변수 선언]
+    // var 변수명;
+  var num;
+  document.write('num >> ' + num);
+  document.write('<br>'); // 뛰어쓰기
+  document.write('num type >> ' , typeof num);
+  document.write('<br>'); // 뛰어쓰기
+
+  num=100;
+  document.write('num >> ' + num + '<br>');
+  document.write('num type >> ' , typeof num);
+  document.write('<br>');
+  
+  num = 2.2;
+  // 만약에 정수가 커지면, 정수뒤에 n을붙여주면 표현해준다.
+  document.write('num >> ' + num);
+  document.write('<br>'); // 뛰어쓰기
+  document.write('num type >> ' , typeof num);
+  document.write('<br>'); // 뛰어쓰기
+
+  num = "안녕"
+  // 만약에 정수가 커지면, 정수뒤에 n을붙여주면 표현해준다.
+  document.write('num >> ' + num);
+  document.write('<br>'); // 뛰어쓰기
+  document.write('num type >> ' , typeof num);
+  document.write('<br>'); // 뛰어쓰기
+
+  num = true;
+  document.write('num >> ' + num);
+  document.write('<br>'); // 뛰어쓰기
+  document.write('num type >> ' , typeof num);
+  document.write('<br>'); // 뛰어쓰기
+  </script>
+</body>
+</html>

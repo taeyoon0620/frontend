@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>배열 함수</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>배열 함수</h1>
+  <script>
+    // 자바스크립트는 배열을 객체형태로 관리한다.======================================
+    const even = [2, 4, 6];
+    console.log(even); //실행결과 : 배열 0: 2 , 배열 1: 4 , 배열2: 6 [2,4,6]
+
+    // [property 추가]==================================================================
+    // 1) 맨 뒤에 추가
+    even.push(8);
+    console.log(even); //실행결과 : 배열 0: 2 , 배열 1: 4 , 배열2: 6 , 배열3: 8 [2,4,6,8]
+
+    even.push(10, 12);
+    console.log(even); //실행결과 : [2,4,6,8,10,12]
+
+    // 2) 맨 앞에 추가
+    even.unshift(-2); //[-2,2,4,6,8,10,12]
+    console.log(even);
+    even.unshift(-4,-6);
+    console.log(even); // [-4,6,-2,2,4,6,8,10,12]
+    
+    // [property 삭제]==================================================================
+    // 1) 맨 뒤에서 삭제
+    const pop1 = even.pop();
+    const pop2 = even.pop();
+    console.log(even);
+    console.log('pop1 : ', pop1); //pop1 : 12
+    console.log('pop2 : ', pop2); //pop1 : 10
+
+    // 2) 맨 앞에서 삭제
+    const shift1 = even.shift();
+    const shift2 = even.shift();
+    console.log(even);
+    console.log('shift1 : ', shift1); //shift1 : -4
+    console.log('shift2 : ', shift2); //shift2 : -6
+  </script>
+</body>
+</html>
